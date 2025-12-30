@@ -1,0 +1,85 @@
+Warning: Design 'vsdcaravel' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : qor
+Design : vsdcaravel
+Version: T-2022.03-SP5
+Date   : Tue Dec 16 19:11:19 2025
+****************************************
+
+
+  Timing Path Group (none)
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          2.19
+  Critical Path Slack:         uninit
+  Critical Path Clk Period:       n/a
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:       1453
+  Hierarchical Port Count:      14185
+  Leaf Cell Count:              27906
+  Buf/Inv Cell Count:            6077
+  Buf Cell Count:                 577
+  Inv Cell Count:                5502
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     21082
+  Sequential Cell Count:         6824
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   396121.770901
+  Noncombinational Area:
+                        431666.659195
+  Buf/Inv Area:          83983.450892
+  Total Buffer Area:         40025.90
+  Total Inverter Area:       44089.27
+  Macro/Black Box Area:   3986.640190
+  Net Area:              32305.402089
+  -----------------------------------
+  Cell Area:            831775.070286
+  Design Area:          864080.472376
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         33142
+  Nets With Violations:            41
+  Max Trans Violations:             0
+  Max Cap Violations:              41
+  -----------------------------------
+
+
+  Hostname: nanodc.iitgn.ac.in
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    9.26
+  Logic Optimization:                  9.67
+  Mapping Optimization:                3.84
+  -----------------------------------------
+  Overall Compile Time:               26.71
+  Overall Compile Wall Clock Time:    27.51
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

@@ -1,0 +1,17 @@
+Command: /home/veeram/Veera_synop/vsdRiscvScl180/dv/storage/./simv -l simulation.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03_Full64; Runtime version U-2023.03_Full64;  Dec 19 19:28 2025
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+Reading storage.hex
+storage.hex loaded into memory
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+[1;31m
+Monitor: Timeout, Test Storage (RTL) Failed
+[0m
+$finish called from file "storage_tb.v", line 72.
+$finish at simulation time           1999990000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1999990000 ps
+CPU Time:      0.200 seconds;       Data structure size:   1.0Mb
+Fri Dec 19 19:28:04 2025

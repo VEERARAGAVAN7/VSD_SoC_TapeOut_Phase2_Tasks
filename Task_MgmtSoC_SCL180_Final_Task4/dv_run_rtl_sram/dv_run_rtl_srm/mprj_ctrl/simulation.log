@@ -1,0 +1,43 @@
+Command: /home/veeram/Veera_synop/vsdRiscvScl180/dv/mprj_ctrl/./simv -l simulation.log
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03_Full64; Runtime version U-2023.03_Full64;  Dec 19 19:25 2025
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+Reading mprj_ctrl.hex
+mprj_ctrl.hex loaded into memory
+Memory 5 bytes = 0xxx 0xxx 0xxx 0xxx 0xxx
+GPIO state = z 
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
++1000 cycles
+[1;31m
+Monitor: Timeout, Test User Project (RTL) Failed
+[0m
+$finish called from file "mprj_ctrl_tb.v", line 65.
+$finish at simulation time            499990000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 499990000 ps
+CPU Time:      0.210 seconds;       Data structure size:   1.0Mb
+Fri Dec 19 19:25:20 2025

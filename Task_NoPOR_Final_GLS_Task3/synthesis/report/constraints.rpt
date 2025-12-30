@@ -1,0 +1,96 @@
+Warning: Design 'vsdcaravel' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : vsdcaravel
+Version: T-2022.03-SP5
+Date   : Tue Dec 16 19:11:19 2025
+****************************************
+
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   chip_core/housekeeping/n2275
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2283
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2289
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2304
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2295
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2321
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2272
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2280
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2287
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2293
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2302
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2308
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2314
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2319
+                                0.15           0.19          -0.04  (VIOLATED)
+   chip_core/housekeeping/n2296
+                                0.15           0.18          -0.03  (VIOLATED)
+   chip_core/housekeeping/n2322
+                                0.15           0.18          -0.03  (VIOLATED)
+   chip_core/housekeeping/n2271
+                                0.15           0.18          -0.03  (VIOLATED)
+   chip_core/housekeeping/n2279
+                                0.15           0.18          -0.03  (VIOLATED)
+   chip_core/housekeeping/n2286
+                                0.15           0.18          -0.03  (VIOLATED)
+   chip_core/housekeeping/n2292
+                                0.15           0.18          -0.03  (VIOLATED)
+   chip_core/housekeeping/n2301
+                                0.15           0.18          -0.03  (VIOLATED)
+   chip_core/housekeeping/n2307
+                                0.15           0.18          -0.03  (VIOLATED)
+   chip_core/housekeeping/n2313
+                                0.15           0.18          -0.03  (VIOLATED)
+   chip_core/housekeeping/n2318
+                                0.15           0.18          -0.03  (VIOLATED)
+   chip_core/soc/core/n445      0.15           0.18          -0.03  (VIOLATED)
+   chip_core/soc/core/VexRiscv/n488
+                                0.15           0.18          -0.03  (VIOLATED)
+   chip_core/soc/core/n1087     0.15           0.18          -0.03  (VIOLATED)
+   chip_core/soc/core/n2666     0.15           0.18          -0.03  (VIOLATED)
+   chip_core/soc/core/n2583     0.15           0.18          -0.03  (VIOLATED)
+   chip_core/soc/core/n555      0.15           0.18          -0.03  (VIOLATED)
+   chip_core/housekeeping/n859
+                                0.15           0.17          -0.02  (VIOLATED)
+   chip_core/housekeeping/n1618
+                                0.15           0.17          -0.02  (VIOLATED)
+   chip_core/housekeeping/n1620
+                                0.15           0.17          -0.02  (VIOLATED)
+   chip_core/housekeeping/n1866
+                                0.15           0.17          -0.02  (VIOLATED)
+   chip_core/soc/core/N3240     0.30           0.32          -0.02  (VIOLATED)
+   chip_core/housekeeping/n279
+                                0.15           0.17          -0.02  (VIOLATED)
+   chip_core/soc/core/n828      0.15           0.16          -0.01  (VIOLATED)
+   chip_core/housekeeping/n407
+                                0.15           0.16          -0.01  (VIOLATED)
+   chip_core/soc/core/sla_6810/n11
+                                0.15           0.16          -0.01  (VIOLATED)
+   chip_core/housekeeping/n465
+                                0.15           0.16          -0.01  (VIOLATED)
+   chip_core/housekeeping/n1168
+                                0.15           0.16          -0.01  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      41                 -1.15  
+
+1
