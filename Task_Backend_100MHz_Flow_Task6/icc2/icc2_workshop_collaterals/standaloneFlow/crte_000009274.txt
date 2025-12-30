@@ -1,0 +1,474 @@
+CRTE_SNAPSHOT_START
+
+SECTION_CRTE_VERSION
+3.0
+
+SECTION_PID
+9274
+
+SECTION_POLLING_INTERVAL
+5
+
+SECTION_DATE_TIME
+Wed Dec 24 15:56:36 IST 2025 (1766571996)
+
+SECTION_OS_VERSION
+osname: Linux
+hostname: nanodc.iitgn.ac.in
+arch: x86_64
+release_version: 3.10.0-1160.119.1.el7.x86_64
+
+SECTION_IPC_INFO
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000000 229378     nanodcmast 600        524288     2          dest         
+0x00000000 229381     nanodcmast 600        524288     2          dest         
+0x00000000 229382     nanodcmast 600        524288     2          dest         
+0x00000000 229385     nanodcmast 600        16777216   2          dest         
+0x00000000 229386     nanodcmast 600        524288     2          dest         
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+
+
+SECTION_ULIMIT
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 191249
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+SECTION_SYSCONF
+_SC_THREAD_SAFE_FUNCTIONS= 200809
+_SC_CLK_TCK= 100
+_SC_OPEN_MAX= 4096
+_SC_PAGE_SIZE= 4096
+_SC_ARG_MAX= 2097152
+_SC_CHILD_MAX= 4096
+_SC_LINE_MAX= 2048
+
+SECTION_FULL_COMMAND
+/home/Synopsys/tools/icc2/U-2022.12-SP3/linux64/nwtn/bin/icc2_exec -root_path /home/Synopsys/tools/icc2/U-2022.12-SP3 -f floorplan1.tcl
+
+SECTION_CPUINFO
+total_core: 24
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 4950
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 4918
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 4456
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 5000
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 4927
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 3661
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 5018
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 5069
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 4510
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 4994
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 3931
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 5000
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 4266
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 4929
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 4916
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 4926
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 3888
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 3890
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 3778
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 3822
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 3793
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 3844
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 3801
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+model_name:  12th Gen Intel(R) Core(TM) i9-12900K
+flags:  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch invpcid_single ssbd rsb_ctxsw ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req umip pku ospke gfni vaes vpclmulqdq movdiri movdir64b md_clear pconfig spec_ctrl intel_stibp flush_l1d arch_capabilities
+cpu_family: 6
+core_frequency_mhz: 3126
+core_per_socket: 0
+stepping: 2
+cache_size_kb: 30720
+ht: 0
+
+SECTION_OS_RELEASE_VERSION
+CentOS Linux release 7.9.2009 (Core)
+
+
+SECTION_SYS/VM
+/proc/sys/vm/admin_reserve_kbytes:8192
+/proc/sys/vm/block_dump:0
+/proc/sys/vm/dirty_background_bytes:0
+/proc/sys/vm/dirty_background_ratio:10
+/proc/sys/vm/dirty_bytes:0
+/proc/sys/vm/dirty_expire_centisecs:3000
+/proc/sys/vm/dirty_ratio:20
+/proc/sys/vm/dirty_writeback_centisecs:500
+/proc/sys/vm/drop_caches:0
+/proc/sys/vm/extfrag_threshold:500
+/proc/sys/vm/hugepages_treat_as_movable:0
+/proc/sys/vm/hugetlb_shm_group:0
+/proc/sys/vm/laptop_mode:0
+/proc/sys/vm/legacy_va_layout:0
+/proc/sys/vm/lowmem_reserve_ratio:256	256	32
+/proc/sys/vm/max_map_count:65530
+/proc/sys/vm/memory_failure_early_kill:0
+/proc/sys/vm/memory_failure_recovery:1
+/proc/sys/vm/min_free_kbytes:67584
+/proc/sys/vm/min_slab_ratio:5
+/proc/sys/vm/min_unmapped_ratio:1
+/proc/sys/vm/mmap_min_addr:4096
+/proc/sys/vm/nr_hugepages:0
+/proc/sys/vm/nr_hugepages_mempolicy:0
+/proc/sys/vm/nr_overcommit_hugepages:0
+/proc/sys/vm/nr_pdflush_threads:0
+/proc/sys/vm/numa_zonelist_order:default
+/proc/sys/vm/oom_dump_tasks:1
+/proc/sys/vm/oom_kill_allocating_task:0
+/proc/sys/vm/overcommit_kbytes:0
+/proc/sys/vm/overcommit_memory:0
+/proc/sys/vm/overcommit_ratio:50
+/proc/sys/vm/page-cluster:3
+/proc/sys/vm/panic_on_oom:0
+/proc/sys/vm/percpu_pagelist_fraction:0
+/proc/sys/vm/stat_interval:1
+/proc/sys/vm/swappiness:60
+/proc/sys/vm/user_reserve_kbytes:131072
+/proc/sys/vm/vfs_cache_pressure:100
+/proc/sys/vm/zone_reclaim_mode:0
+
+
+SECTION_SWAP
+swap_partition: /dev/dm-1
+size_gb: 23
+
+CRTE_SNAPSHOT_END
+
+CRTE_PERIODIC_START 1 1766571996124
+
+SECTION_MPSTAT
+total_core: 24
+
+CPU     %user   %kernel %wait   %idle   
+all   1.372916 0.140348 0.022907 98.463829
+0     2.666231 0.461057 0.026753 96.845963
+1     0.646912 0.027084 0.000576 99.325424
+2     1.489835 0.157679 0.025197 98.327286
+3     1.110493 0.046313 0.000740 98.842453
+4     1.532207 0.195406 0.018074 98.254311
+5     0.719996 0.033479 0.002129 99.244400
+6     1.338469 0.193151 0.010736 98.457642
+7     0.944553 0.031021 0.000930 99.023491
+8     0.973871 0.184507 0.008786 98.832832
+9     0.940111 0.035544 0.002266 99.022072
+10     1.099494 0.165554 0.008171 98.726784
+11     1.010346 0.033446 0.001003 98.955208
+12     1.008341 0.163115 0.008447 98.820099
+13     1.038419 0.031549 0.000832 98.929207
+14     1.075818 0.179469 0.004357 98.740356
+15     0.796920 0.028969 0.001398 99.172714
+16     1.911672 0.180107 0.005083 97.903137
+17     1.830621 0.176981 0.007507 97.984894
+18     1.709937 0.166852 0.004940 98.118279
+19     1.746033 0.163325 0.004477 98.086166
+20     1.813152 0.179167 0.002882 98.004799
+21     1.828786 0.177226 0.003871 97.990120
+22     1.828882 0.206231 0.336830 97.628059
+23     1.894195 0.152206 0.063923 97.889679
+SECTION_LOADAVG
+1.24 1.76 1.95 1/981 9542
+
+SECTION_PID_STATUS
+name: icc2_exec
+state: 1
+vmsize: 8089432
+vmrss: 1251108
+vmdata: 5540920
+vmstk: 1056
+vmexe: 922152
+vmlib: 1276988
+threads: 28
+
+SECTION_PROCESS_CPU_UTIL
+pid: 9274
+cpu_total_time: 1378229267
+cpu_used_time: 19334
+cpu_p: 
+
+SECTION_SYSTEM_CPU_UTIL
+sys_cpu_p: 
+
+SECTION_MEMINFO
+memtotal: 49055832
+memfree: 9139828
+cached: 25868456
+swapcached: 4416
+active: 23727892
+swaptotal: 24641532
+swapfree: 24619516
+
+SECTION_SMAPS
+shared_kb: 347412
+private_kb: 905768
+
+SECTION_DF
+Filesystem  Size  Used Avail Use%
+filesystem        49G  8G  41G    18
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          26214400  205699 26008701   4294954752
+
+SECTION_CWD
+Filesystem  Size  Used Avail Use%
+filesystem        856G  577G  279G    67
+
+Filesystem    Inodes   IUsed   IFree   IUse%
+filesystem          449214464  2250155 446964309   4294966620
+
+SECTION_SWAP_RATE
+blk_read: 26448
+blk_wrtn: 47504
+swap_in_rate: 
+swap_out_rate: 
+swap_in_rate: 
+swap_out_rate: 
+
+SECTION_FD_SIZE
+files: 25
+total_size: 7222029
+
+SECTION_NET_INTERFACE
+total_eth_avbl: 3
+
+name net_rx_err net_rx_drp net_tx_err net_tx_drp 
+    lo:         0        0        0        0
+virbr0-nic:               0        0        0        0
+virbr0:               0        0        0        0
+
+SECTION_NFSSTAT
+Error: Could not collect the data.
+
+SECTION_THREAD_CPU_UTIL
+9274 : 9274 (icc2_exec) R 1 9261 9192 0 -1 4202496 1204782 351636 2 0 1266 141 584 45 20 0 28 0 57440396 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140736384402832 140123404355421 4096 2147221247 18878464 1217974015 0 0 0 17 23 0 0 1 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9275 : 9275 (jemalloc_bg_thd) S 1 9261 9192 0 -1 1077944384 4 351636 0 0 0 0 584 45 20 0 28 0 57440420 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140121397325200 140123404343861 0 2147221247 18878464 1217974015 18446744072303515766 0 0 -1 9 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9294 : 9294 (icc2_exec) S 1 9261 9192 0 -1 1077944384 2 351636 0 0 0 0 584 45 20 0 28 0 57440686 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140121272155744 140121618348867 0 2147221247 18878464 1217974015 18446744072304928325 0 0 -1 10 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9321 : 9321 (icc2_exec) S 1 9261 9192 0 -1 1077944384 1273 351636 0 0 9 0 584 45 20 0 28 0 57441028 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140118178066088 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 8 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9322 : 9322 (icc2_exec) S 1 9261 9192 0 -1 1077944384 882 351636 0 0 11 0 584 45 20 0 28 0 57441028 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140118320676520 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 12 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9330 : 9330 (icc2_exec) S 1 9261 9192 0 -1 1077944384 871 351636 0 0 9 0 584 45 20 0 28 0 57441133 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140118463286952 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 23 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9331 : 9331 (icc2_exec) S 1 9261 9192 0 -1 1077944384 867 351636 0 0 11 0 584 45 20 0 28 0 57441133 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140118605897384 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 13 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9332 : 9332 (icc2_exec) S 1 9261 9192 0 -1 1077944384 479 351636 0 0 8 0 584 45 20 0 28 0 57441133 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140121170206376 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 10 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9333 : 9333 (icc2_exec) S 1 9261 9192 0 -1 1077944384 1101 351636 0 0 8 0 584 45 20 0 28 0 57441133 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140120887664296 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 4 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9334 : 9334 (icc2_exec) S 1 9261 9192 0 -1 1077944384 718 351636 0 0 12 0 584 45 20 0 28 0 57441133 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140121178599080 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 22 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9337 : 9337 (icc2_exec) S 1 9261 9192 0 -1 1077944384 112 351636 0 0 30 0 584 45 20 0 28 0 57441392 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140120745053904 140123404343861 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 5 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9338 : 9338 (icc2_exec) S 1 9261 9192 0 -1 1077944384 258 351636 0 0 38 0 584 45 20 0 28 0 57441392 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140120602443472 140123404343861 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 10 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9339 : 9339 (icc2_exec) S 1 9261 9192 0 -1 1077944384 209 351636 0 0 35 0 584 45 20 0 28 0 57441392 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140120459833040 140123404343861 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 14 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9340 : 9340 (icc2_exec) S 1 9261 9192 0 -1 1077944384 103 351636 0 0 28 0 584 45 20 0 28 0 57441392 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140120317222608 140123404343861 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 16 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9341 : 9341 (icc2_exec) S 1 9261 9192 0 -1 1077944384 116 351636 0 0 29 0 584 45 20 0 28 0 57441392 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140120174612176 140123404343861 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 17 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9342 : 9342 (icc2_exec) S 1 9261 9192 0 -1 1077944384 46 351636 0 0 30 0 584 45 20 0 28 0 57441392 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140120032001744 140123404343861 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 6 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9343 : 9343 (icc2_exec) S 1 9261 9192 0 -1 1077944384 259 351636 0 0 34 0 584 45 20 0 28 0 57441392 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140119889391312 140123404343861 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 10 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9473 : 9473 (icc2_exec) S 1 9261 9192 0 -1 1077944384 107 351636 0 0 0 0 584 45 20 0 28 0 57443071 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140118891118248 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 18 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9474 : 9474 (icc2_exec) S 1 9261 9192 0 -1 1077944384 13 351636 0 0 0 0 584 45 20 0 28 0 57443071 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140119176339112 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 21 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9475 : 9475 (icc2_exec) S 1 9261 9192 0 -1 1077944384 10 351636 0 0 0 0 584 45 20 0 28 0 57443071 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140119033728680 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 19 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9476 : 9476 (icc2_exec) S 1 9261 9192 0 -1 1077944384 15 351636 0 0 0 0 584 45 20 0 28 0 57443071 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140117837274792 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 20 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9477 : 9477 (icc2_exec) S 1 9261 9192 0 -1 1077944384 15 351636 0 0 0 0 584 45 20 0 28 0 57443072 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140117845667496 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 15 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9478 : 9478 (icc2_exec) S 1 9261 9192 0 -1 1077944384 14 351636 0 0 0 0 584 45 20 0 28 0 57443072 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140117820489384 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 23 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9479 : 9479 (icc2_exec) S 1 9261 9192 0 -1 1077944384 57 351636 0 0 0 0 584 45 20 0 28 0 57443072 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140117812096680 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 0 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9480 : 9480 (icc2_exec) S 1 9261 9192 0 -1 1077944384 12 351636 0 0 0 0 584 45 20 0 28 0 57443072 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140117828882088 140121618361897 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 2 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9481 : 9481 (Thread (pooled)) S 1 9261 9192 0 -1 1077944384 1 351636 0 0 0 0 584 45 20 0 28 0 57443080 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140117803703760 140123404343861 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 11 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9482 : 9482 (Thread (pooled)) S 1 9261 9192 0 -1 1077944384 256 351636 0 0 0 0 584 45 20 0 28 0 57443081 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140117795311056 140123404343861 0 8192 18878464 1217974015 18446744072303515766 0 0 -1 23 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+9483 : 9483 (icc2_exec) S 1 9261 9192 0 -1 1077944384 5 351636 0 0 3 22 584 45 20 0 28 0 57443094 8283578368 312777 18446744073709551615 4194304 948477121 140736384426848 140117784821008 140121618348867 0 8192 18878464 1217974015 18446744072304928325 0 0 -1 11 0 0 0 0 0 1187767168 1239931104 1936506880 140736384431082 140736384431218 140736384431218 140736384438197 0
+
+CRTE_PERIODIC_END 1 1766571996124

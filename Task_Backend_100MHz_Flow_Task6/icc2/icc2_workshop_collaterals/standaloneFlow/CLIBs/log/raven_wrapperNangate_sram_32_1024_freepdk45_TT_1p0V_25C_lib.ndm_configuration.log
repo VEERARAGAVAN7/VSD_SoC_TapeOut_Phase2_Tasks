@@ -1,0 +1,182 @@
+ 
+                              Library Manager (TM)
+
+                Version U-2022.12-SP3 for linux64 - Apr 18, 2023
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+set search_path {/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/ .}
+/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/ .
+setenv RUN_RESULT /home/nanodcmaster/tmp/_rryLRYIX
+/home/nanodcmaster/tmp/_rryLRYIX
+set_current_mismatch_config auto_fix
+1
+set_app_options -name lib.workspace.build_script -value CLIBs/.scripts/sram_32_1024_freepdk45_TT_1p0V_25C_lib.tcl
+lib.workspace.build_script CLIBs/.scripts/sram_32_1024_freepdk45_TT_1p0V_25C_lib.tcl
+#suppress_messages
+source -echo -verbose CLIBs/.scripts/sram_32_1024_freepdk45_TT_1p0V_25C_lib.tcl
+set NDM_LIBS {}
+set FRAME_LIBS {}
+set LEF_FILES {/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/sram_32_1024_freepdk45.lef}
+/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/sram_32_1024_freepdk45.lef
+set DB_FILES {/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/sram_32_1024_freepdk45_TT_1p0V_25C_lib.db}
+/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/sram_32_1024_freepdk45_TT_1p0V_25C_lib.db
+set TECH_FILE "/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate.tf"
+/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate.tf
+set_app_options -name lib.workspace.create_cached_lib -value true
+lib.workspace.create_cached_lib true
+#suppress_messages
+set_app_options -name lib.workspace.allow_read_aggregate_lib -value true
+lib.workspace.allow_read_aggregate_lib true
+create_workspace sram_32_1024_freepdk45_TT_1p0V_25C_lib -technology $TECH_FILE -scale_factor 10000
+Warning: Layer 'metal1' is missing the attribute 'minArea'. (nangate.tf line 79) (TECH-026)
+Warning: Layer 'metal2' is missing the attribute 'minArea'. (nangate.tf line 128) (TECH-026)
+Warning: Layer 'metal3' is missing the attribute 'minArea'. (nangate.tf line 187) (TECH-026)
+Warning: Layer 'metal4' is missing the attribute 'minArea'. (nangate.tf line 246) (TECH-026)
+Warning: Layer 'metal5' is missing the attribute 'minArea'. (nangate.tf line 304) (TECH-026)
+Warning: Layer 'metal6' is missing the attribute 'minArea'. (nangate.tf line 362) (TECH-026)
+Warning: Layer 'metal7' is missing the attribute 'minArea'. (nangate.tf line 420) (TECH-026)
+Warning: Layer 'metal8' is missing the attribute 'minArea'. (nangate.tf line 477) (TECH-026)
+Warning: Layer 'metal9' is missing the attribute 'minArea'. (nangate.tf line 534) (TECH-026)
+Warning: Layer 'metal10' is missing the attribute 'minArea'. (nangate.tf line 590) (TECH-026)
+Warning: nangate.tf line 850, ContactCode 'via4_0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 868, ContactCode 'via5_0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 904, ContactCode 'via7_0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 940, ContactCode 'via9_0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 1358, ContactCode 'Via4Array-0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 1377, ContactCode 'Via5Array-0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 1415, ContactCode 'Via7Array-0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 1453, ContactCode 'Via9Array-0' has undefined or zero-enclosures. (TECH-250)
+Warning: Layer 'via1/via2' is missing the attribute 'maxStackLevel'. (nangate.tf line 1463) (TECH-026)
+Warning: Layer 'via2/via3' is missing the attribute 'maxStackLevel'. (nangate.tf line 1472) (TECH-026)
+Warning: Layer 'via3/via4' is missing the attribute 'maxStackLevel'. (nangate.tf line 1481) (TECH-026)
+Warning: Layer 'via4/via5' is missing the attribute 'maxStackLevel'. (nangate.tf line 1490) (TECH-026)
+Warning: Layer 'via5/via6' is missing the attribute 'maxStackLevel'. (nangate.tf line 1499) (TECH-026)
+Warning: Layer 'via6/via7' is missing the attribute 'maxStackLevel'. (nangate.tf line 1508) (TECH-026)
+Warning: Layer 'via7/via8' is missing the attribute 'maxStackLevel'. (nangate.tf line 1517) (TECH-026)
+Warning: Layer 'via8/via9' is missing the attribute 'maxStackLevel'. (nangate.tf line 1526) (TECH-026)
+Warning: Layer 'metal1' is missing the attribute 'minArea'. ( line 105) (TECH-026)
+Warning: Layer 'metal2' is missing the attribute 'minArea'. ( line 164) (TECH-026)
+Warning: Layer 'metal3' is missing the attribute 'minArea'. ( line 223) (TECH-026)
+Warning: Layer 'metal4' is missing the attribute 'minArea'. ( line 281) (TECH-026)
+Warning: Layer 'metal5' is missing the attribute 'minArea'. ( line 339) (TECH-026)
+Warning: Layer 'metal6' is missing the attribute 'minArea'. ( line 397) (TECH-026)
+Warning: Layer 'metal7' is missing the attribute 'minArea'. ( line 454) (TECH-026)
+Warning: Layer 'metal8' is missing the attribute 'minArea'. ( line 511) (TECH-026)
+Warning: Layer 'metal9' is missing the attribute 'minArea'. ( line 567) (TECH-026)
+Warning: Layer 'metal10' is missing the attribute 'minArea'. ( line 623) (TECH-026)
+Warning: Cut layer 'via1' has a non-cross primary default ContactCode 'via1_4'. (line 628) (TECH-083w)
+Warning: Cut layer 'via2' has a non-cross primary default ContactCode 'via2_8'. (line 718) (TECH-083w)
+Information: Loading technology file '/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate.tf' (FILE-007)
+... created workspace sram_32_1024_freepdk45_TT_1p0V_25C_lib
+read_lef $LEF_FILES
+Information: The default value of lib.workspace.library_developer_mode will be 'true' in future release. (LMUI-054)
+Information: Loading LEF file '/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/sram_32_1024_freepdk45.lef' (FILE-007)
+Information: Read LEF into a new library 'sram_32_1024_freepdk45'. (LEFR-022)
+Warning: Line 2070890, OBS (55.7375, 1.0375),(55.815, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[0]. (LEFR-067)
+Warning: Line 2071273, OBS (55.7375, 1.0375),(55.815, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[0]. (LEFR-067)
+Warning: Line 2071274, OBS (58.5975, 1.0375),(58.675, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[1]. (LEFR-067)
+Warning: Line 2070897, OBS (58.5975, 1.0375),(58.675, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[1]. (LEFR-067)
+Warning: Line 2070904, OBS (61.4575, 1.0375),(61.535, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[2]. (LEFR-067)
+Warning: Line 2071275, OBS (61.4575, 1.0375),(61.535, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[2]. (LEFR-067)
+Warning: Line 2070911, OBS (64.3175, 1.0375),(64.395, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[3]. (LEFR-067)
+Warning: Line 2071276, OBS (64.3175, 1.0375),(64.395, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[3]. (LEFR-067)
+Warning: Line 2070918, OBS (67.1775, 1.0375),(67.255, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[4]. (LEFR-067)
+Warning: Line 2071277, OBS (67.1775, 1.0375),(67.255, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[4]. (LEFR-067)
+Warning: Line 2071278, OBS (70.0375, 1.0375),(70.115, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[5]. (LEFR-067)
+Warning: Line 2070925, OBS (70.0375, 1.0375),(70.115, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[5]. (LEFR-067)
+Warning: Line 2071279, OBS (72.8975, 1.0375),(72.975, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[6]. (LEFR-067)
+Warning: Line 2070932, OBS (72.8975, 1.0375),(72.975, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[6]. (LEFR-067)
+Warning: Line 2071280, OBS (75.7575, 1.0375),(75.835, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[7]. (LEFR-067)
+Warning: Line 2070939, OBS (75.7575, 1.0375),(75.835, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[7]. (LEFR-067)
+Warning: Line 2071281, OBS (78.6175, 1.0375),(78.695, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[8]. (LEFR-067)
+Warning: Line 2070946, OBS (78.6175, 1.0375),(78.695, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[8]. (LEFR-067)
+Warning: Line 2070953, OBS (81.4775, 1.0375),(81.555, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[9]. (LEFR-067)
+Warning: Line 2071282, OBS (81.4775, 1.0375),(81.555, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[9]. (LEFR-067)
+Warning: Line 2071283, OBS (84.3375, 1.0375),(84.415, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[10]. (LEFR-067)
+Warning: Line 2070960, OBS (84.3375, 1.0375),(84.415, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[10]. (LEFR-067)
+Warning: Line 2070967, OBS (87.1975, 1.0375),(87.275, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[11]. (LEFR-067)
+Warning: Line 2071284, OBS (87.1975, 1.0375),(87.275, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[11]. (LEFR-067)
+Warning: Line 2071285, OBS (90.0575, 1.0375),(90.135, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[12]. (LEFR-067)
+Warning: Line 2070974, OBS (90.0575, 1.0375),(90.135, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[12]. (LEFR-067)
+Warning: Line 2071286, OBS (92.9175, 1.0375),(92.995, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[13]. (LEFR-067)
+Warning: Line 2070981, OBS (92.9175, 1.0375),(92.995, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[13]. (LEFR-067)
+Warning: Line 2070988, OBS (95.7775, 1.0375),(95.855, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[14]. (LEFR-067)
+Warning: Line 2071287, OBS (95.7775, 1.0375),(95.855, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[14]. (LEFR-067)
+Warning: Line 2070995, OBS (98.6375, 1.0375),(98.715, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[15]. (LEFR-067)
+Warning: Line 2071288, OBS (98.6375, 1.0375),(98.715, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[15]. (LEFR-067)
+Warning: Line 2071289, OBS (101.4975, 1.0375),(101.575, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[16]. (LEFR-067)
+Warning: Line 2071002, OBS (101.4975, 1.0375),(101.575, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[16]. (LEFR-067)
+Warning: Line 2071290, OBS (104.3575, 1.0375),(104.435, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[17]. (LEFR-067)
+Warning: Line 2071009, OBS (104.3575, 1.0375),(104.435, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[17]. (LEFR-067)
+Warning: Line 2071291, OBS (107.2175, 1.0375),(107.295, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[18]. (LEFR-067)
+Warning: Line 2071016, OBS (107.2175, 1.0375),(107.295, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[18]. (LEFR-067)
+Warning: Line 2071292, OBS (110.0775, 1.0375),(110.155, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[19]. (LEFR-067)
+Warning: Line 2071023, OBS (110.0775, 1.0375),(110.155, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[19]. (LEFR-067)
+Warning: Line 2071293, OBS (112.9375, 1.0375),(113.015, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[20]. (LEFR-067)
+Warning: Line 2071030, OBS (112.9375, 1.0375),(113.015, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[20]. (LEFR-067)
+Warning: Line 2071294, OBS (115.7975, 1.0375),(115.875, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[21]. (LEFR-067)
+Warning: Line 2071037, OBS (115.7975, 1.0375),(115.875, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[21]. (LEFR-067)
+Warning: Line 2071295, OBS (118.6575, 1.0375),(118.735, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[22]. (LEFR-067)
+Warning: Line 2071044, OBS (118.6575, 1.0375),(118.735, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[22]. (LEFR-067)
+Warning: Line 2071051, OBS (121.5175, 1.0375),(121.595, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[23]. (LEFR-067)
+Warning: Line 2071296, OBS (121.5175, 1.0375),(121.595, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[23]. (LEFR-067)
+Warning: Line 2071297, OBS (124.3775, 1.0375),(124.455, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[24]. (LEFR-067)
+Warning: Line 2071058, OBS (124.3775, 1.0375),(124.455, 1.1725) on layer metal2 does not have a "SPACING 0" attribute but overlaps or touches pin sram_32_1024_freepdk45/din0[24]. (LEFR-067)
+Note - message 'LEFR-067' limit (50) exceeded. Remainder will be suppressed.
+Information: The error data is saved in ./PreFrameCheck/sram_32_1024_freepdk45/sram_32_1024_freepdk45_preFrame.err; use the error browser to view the errors. (LEFR-070)
+Warning: The library workspace has 176371 cell layout warnings. (LEFR-072)
+{sram_32_1024_freepdk45}
+read_db $DB_FILES
+Information: Loading db file '/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/sram_32_1024_freepdk45_TT_1p0V_25C_lib.db' (FILE-007)
+{sram_32_1024_freepdk45_TT_1p0V_25C_lib}
+process_workspaces -check_options {-allow_missing} -force -directory CLIBs -output sram_32_1024_freepdk45_TT_1p0V_25C_lib.ndm
+Checking libraries...
+Information: Only one logical library loaded - internal checks only (LM-005)
+Using sram_32_1024_freepdk45_TT_1p0V_25C_lib as the base library.
+Warning: Copied PG pin 'sram_32_1024_freepdk45_TT_1p0V_25C_lib/sram_32_1024_freepdk45/vdd' from physical source (was missing in logical source) (LM-109)
+Warning: Copied PG pin 'sram_32_1024_freepdk45_TT_1p0V_25C_lib/sram_32_1024_freepdk45/gnd' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell sram_32_1024_freepdk45. (LM-175)
+Error: Direction 'inout' for port vdd on sram_32_1024_freepdk45_TT_1p0V_25C_lib/sram_32_1024_freepdk45/design
+        does not match expected value 'in' from sram_32_1024_freepdk45_TT_1p0V_25C_lib/sram_32_1024_freepdk45/timing (NDM-032)
+Error: Direction 'inout' for port gnd on sram_32_1024_freepdk45_TT_1p0V_25C_lib/sram_32_1024_freepdk45/design
+        does not match expected value 'in' from sram_32_1024_freepdk45_TT_1p0V_25C_lib/sram_32_1024_freepdk45/timing (NDM-032)
+Information: Fixed direction mismatches for block sram_32_1024_freepdk45 (LM-054)
+Creating default ground rail
+Associated ground rail 1 to pin gnd
+Information: Combined 1 physical design:1 with a design view (1 had ports reordered); (LM-034)
+... creating frames for sram_32_1024_freepdk45_TT_1p0V_25C_lib
+Warning: In block sram_32_1024_freepdk45.frame, the port 'vdd' has many terminals on metal layer (Number of terminals: 17626), which may increase the runtime of frame creation. Please check whether all the terminals are expected. (FRAM-063)
+Warning: In block sram_32_1024_freepdk45.frame, the port 'gnd' has many terminals on metal layer (Number of terminals: 17634), which may increase the runtime of frame creation. Please check whether all the terminals are expected. (FRAM-063)
+Information: Block sram_32_1024_freepdk45.frame, the feature of blocking core area is set on specific layers. New zero-spacing routing blockages and RC metal are added on layers: metal1 metal2 metal3. (FRAM-045)
+Information: Block sram_32_1024_freepdk45.frame, the feature of blockage trimming by pin is set to 'touch' on specific layers. All metal shapes and routing blockages touch pins in design view are trimmed on layers: metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10. (FRAM-046)
+... created 1 frames
+
+Workspace check succeeded!
+... wrote CLIBs/sram_32_1024_freepdk45_TT_1p0V_25C_lib.ndm
+... removing library 'sram_32_1024_freepdk45_TT_1p0V_25C_lib'
+... removing library 'sram_32_1024_freepdk45'
+... lib workspace removed!
+
+Warning: EMS database "check_workspace.ems" already exists, over-writing it. (EMS-040)
+Maximum memory usage for this session: 1221.68 MB
+CPU usage for this session:      7 seconds (  0.00 hours)
+Elapsed time for this session:     15 seconds (  0.00 hours)
+Thank you for using Library Manager.
+

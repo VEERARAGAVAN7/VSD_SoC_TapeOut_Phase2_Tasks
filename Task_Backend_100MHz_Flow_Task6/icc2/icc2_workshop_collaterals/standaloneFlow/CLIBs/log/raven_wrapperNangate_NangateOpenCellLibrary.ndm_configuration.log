@@ -1,0 +1,1721 @@
+ 
+                              Library Manager (TM)
+
+                Version U-2022.12-SP3 for linux64 - Apr 18, 2023
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+set search_path {/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/ .}
+/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/ .
+setenv RUN_RESULT /home/nanodcmaster/tmp/_rrGAJAeb
+/home/nanodcmaster/tmp/_rrGAJAeb
+set_current_mismatch_config auto_fix
+1
+set_app_options -name lib.workspace.build_script -value CLIBs/.scripts/NangateOpenCellLibrary.tcl
+lib.workspace.build_script CLIBs/.scripts/NangateOpenCellLibrary.tcl
+#suppress_messages
+source -echo -verbose CLIBs/.scripts/NangateOpenCellLibrary.tcl
+set NDM_LIBS {}
+set FRAME_LIBS {}
+set LEF_FILES {/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate_stdcell.lef}
+/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate_stdcell.lef
+set DB_FILES {/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate_typical.db}
+/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate_typical.db
+set TECH_FILE "/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate.tf"
+/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate.tf
+set_app_options -name lib.workspace.create_cached_lib -value true
+lib.workspace.create_cached_lib true
+#suppress_messages
+set_app_options -name lib.workspace.allow_read_aggregate_lib -value true
+lib.workspace.allow_read_aggregate_lib true
+create_workspace NangateOpenCellLibrary -technology $TECH_FILE -scale_factor 10000
+Warning: Layer 'metal1' is missing the attribute 'minArea'. (nangate.tf line 79) (TECH-026)
+Warning: Layer 'metal2' is missing the attribute 'minArea'. (nangate.tf line 128) (TECH-026)
+Warning: Layer 'metal3' is missing the attribute 'minArea'. (nangate.tf line 187) (TECH-026)
+Warning: Layer 'metal4' is missing the attribute 'minArea'. (nangate.tf line 246) (TECH-026)
+Warning: Layer 'metal5' is missing the attribute 'minArea'. (nangate.tf line 304) (TECH-026)
+Warning: Layer 'metal6' is missing the attribute 'minArea'. (nangate.tf line 362) (TECH-026)
+Warning: Layer 'metal7' is missing the attribute 'minArea'. (nangate.tf line 420) (TECH-026)
+Warning: Layer 'metal8' is missing the attribute 'minArea'. (nangate.tf line 477) (TECH-026)
+Warning: Layer 'metal9' is missing the attribute 'minArea'. (nangate.tf line 534) (TECH-026)
+Warning: Layer 'metal10' is missing the attribute 'minArea'. (nangate.tf line 590) (TECH-026)
+Warning: nangate.tf line 850, ContactCode 'via4_0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 868, ContactCode 'via5_0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 904, ContactCode 'via7_0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 940, ContactCode 'via9_0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 1358, ContactCode 'Via4Array-0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 1377, ContactCode 'Via5Array-0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 1415, ContactCode 'Via7Array-0' has undefined or zero-enclosures. (TECH-250)
+Warning: nangate.tf line 1453, ContactCode 'Via9Array-0' has undefined or zero-enclosures. (TECH-250)
+Warning: Layer 'via1/via2' is missing the attribute 'maxStackLevel'. (nangate.tf line 1463) (TECH-026)
+Warning: Layer 'via2/via3' is missing the attribute 'maxStackLevel'. (nangate.tf line 1472) (TECH-026)
+Warning: Layer 'via3/via4' is missing the attribute 'maxStackLevel'. (nangate.tf line 1481) (TECH-026)
+Warning: Layer 'via4/via5' is missing the attribute 'maxStackLevel'. (nangate.tf line 1490) (TECH-026)
+Warning: Layer 'via5/via6' is missing the attribute 'maxStackLevel'. (nangate.tf line 1499) (TECH-026)
+Warning: Layer 'via6/via7' is missing the attribute 'maxStackLevel'. (nangate.tf line 1508) (TECH-026)
+Warning: Layer 'via7/via8' is missing the attribute 'maxStackLevel'. (nangate.tf line 1517) (TECH-026)
+Warning: Layer 'via8/via9' is missing the attribute 'maxStackLevel'. (nangate.tf line 1526) (TECH-026)
+Warning: Layer 'metal1' is missing the attribute 'minArea'. ( line 105) (TECH-026)
+Warning: Layer 'metal2' is missing the attribute 'minArea'. ( line 164) (TECH-026)
+Warning: Layer 'metal3' is missing the attribute 'minArea'. ( line 223) (TECH-026)
+Warning: Layer 'metal4' is missing the attribute 'minArea'. ( line 281) (TECH-026)
+Warning: Layer 'metal5' is missing the attribute 'minArea'. ( line 339) (TECH-026)
+Warning: Layer 'metal6' is missing the attribute 'minArea'. ( line 397) (TECH-026)
+Warning: Layer 'metal7' is missing the attribute 'minArea'. ( line 454) (TECH-026)
+Warning: Layer 'metal8' is missing the attribute 'minArea'. ( line 511) (TECH-026)
+Warning: Layer 'metal9' is missing the attribute 'minArea'. ( line 567) (TECH-026)
+Warning: Layer 'metal10' is missing the attribute 'minArea'. ( line 623) (TECH-026)
+Warning: Cut layer 'via1' has a non-cross primary default ContactCode 'via1_4'. (line 628) (TECH-083w)
+Warning: Cut layer 'via2' has a non-cross primary default ContactCode 'via2_8'. (line 718) (TECH-083w)
+Information: Loading technology file '/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate.tf' (FILE-007)
+... created workspace NangateOpenCellLibrary
+read_lef $LEF_FILES
+Information: The default value of lib.workspace.library_developer_mode will be 'true' in future release. (LMUI-054)
+Information: Loading LEF file '/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate_stdcell.lef' (FILE-007)
+Information: Read LEF into a new library 'nangate_stdcell'. (LEFR-022)
+Information: Changed the site definition for the AND2_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AND2_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AND2_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AND3_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AND3_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AND3_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AND4_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AND4_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AND4_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the ANTENNA_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI211_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI211_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI211_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI21_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI21_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI21_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI221_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI221_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI221_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI222_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI222_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI222_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI22_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI22_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the AOI22_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the BUF_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the BUF_X16 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the BUF_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the BUF_X32 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the BUF_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the BUF_X8 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the CLKBUF_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the CLKBUF_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the CLKBUF_X3 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the CLKGATETST_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the CLKGATETST_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the CLKGATETST_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the CLKGATETST_X8 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the CLKGATE_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the CLKGATE_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the CLKGATE_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the CLKGATE_X8 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DFFRS_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DFFRS_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DFFR_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DFFR_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DFFS_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DFFS_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DFF_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DFF_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DLH_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DLH_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DLL_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the DLL_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the FA_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the FILLCELL_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the FILLCELL_X16 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the FILLCELL_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the FILLCELL_X32 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the FILLCELL_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the FILLCELL_X8 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the HA_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the INV_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the INV_X16 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the INV_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the INV_X32 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the INV_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the INV_X8 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the LOGIC0_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the LOGIC1_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the MUX2_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the MUX2_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NAND2_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NAND2_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NAND2_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NAND3_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NAND3_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NAND3_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NAND4_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NAND4_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NAND4_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NOR2_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NOR2_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NOR2_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NOR3_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NOR3_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NOR3_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NOR4_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NOR4_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the NOR4_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI211_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI211_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI211_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI21_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI21_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI21_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI221_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI221_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI221_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI222_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI222_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI222_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI22_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI22_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI22_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OAI33_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OR2_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OR2_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OR2_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OR3_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OR3_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OR3_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OR4_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OR4_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the OR4_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the SDFFRS_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the SDFFRS_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the SDFFR_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the SDFFR_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the SDFFS_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the SDFFS_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the SDFF_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the SDFF_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the TBUF_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the TBUF_X16 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the TBUF_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the TBUF_X4 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the TBUF_X8 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the TINV_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the TLAT_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the XNOR2_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the XNOR2_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the XOR2_X1 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+Information: Changed the site definition for the XOR2_X2 library cell to unit from FreePDK45_38x28_10R_NP_162NW_34O. (LEFR-064)
+{nangate_stdcell}
+read_db $DB_FILES
+Information: Loading db file '/home/nanodcmaster/Synopsys/pdk/SCL_PDK_3/work/run1/icc2_workshop_collaterals/nangate_typical.db' (FILE-007)
+{NangateOpenCellLibrary}
+process_workspaces -check_options {-allow_missing} -force -directory CLIBs -output NangateOpenCellLibrary.ndm
+Checking libraries...
+Information: Only one logical library loaded - internal checks only (LM-005)
+Using NangateOpenCellLibrary as the base library.
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AND2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AND2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AND2_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AND3_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AND3_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AND3_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AND4_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AND4_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AND4_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/ANTENNA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/ANTENNA_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/ANTENNA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/ANTENNA_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block ANTENNA_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI21_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI21_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI21_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI21_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI21_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI21_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI21_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI21_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI21_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI22_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI22_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI22_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI22_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI22_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI22_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI22_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI22_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI22_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI211_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI211_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI211_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI211_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI211_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI211_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI211_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI211_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI211_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI221_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI221_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI221_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI221_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI221_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI221_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI221_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI221_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI221_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI222_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI222_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI222_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI222_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI222_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI222_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI222_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI222_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI222_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X8 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X16/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X16/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X16 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X32/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X32/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X32 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKBUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKBUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKBUF_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKBUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKBUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKBUF_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKBUF_X3/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X3/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKBUF_X3/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X3/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKBUF_X3 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATETST_X1. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATETST_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATETST_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATETST_X1 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATETST_X2. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATETST_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATETST_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATETST_X2 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATETST_X4. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATETST_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATETST_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATETST_X4 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATETST_X8. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATETST_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATETST_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATETST_X8 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATE_X1. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATE_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATE_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATE_X1 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATE_X2. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATE_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATE_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATE_X2 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATE_X4. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATE_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATE_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATE_X4 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATE_X8. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATE_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATE_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATE_X8 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFRS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFRS_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFRS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFRS_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFRS_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFRS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFRS_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFRS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFRS_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFRS_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFR_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFR_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFR_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFR_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFR_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFR_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFR_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFR_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFR_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFR_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFS_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFS_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFS_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFS_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFS_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFS_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFF_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFF_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DFF_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFF_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFF_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DFF_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DLH_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLH_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DLH_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLH_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DLH_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DLH_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLH_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DLH_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLH_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DLH_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DLL_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLL_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DLL_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLL_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DLL_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DLL_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLL_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DLL_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLL_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DLL_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FA_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FA_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block FA_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X8 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X16/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X16/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X16 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X32/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X32/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X32 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/HA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/HA_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/HA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/HA_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block HA_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X8 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X16/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X16/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X16 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X32/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X32/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X32 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/LOGIC0_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/LOGIC0_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/LOGIC0_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/LOGIC0_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block LOGIC0_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/LOGIC1_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/LOGIC1_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/LOGIC1_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/LOGIC1_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block LOGIC1_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/MUX2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/MUX2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/MUX2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/MUX2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block MUX2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/MUX2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/MUX2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/MUX2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/MUX2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block MUX2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND2_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND3_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND3_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND3_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND4_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND4_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND4_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR2_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR3_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR3_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR3_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR4_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR4_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR4_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI21_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI21_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI21_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI21_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI21_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI21_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI21_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI21_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI21_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI22_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI22_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI22_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI22_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI22_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI22_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI22_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI22_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI22_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI33_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI33_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI33_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI33_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI33_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI211_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI211_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI211_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI211_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI211_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI211_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI211_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI211_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI211_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI221_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI221_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI221_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI221_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI221_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI221_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI221_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI221_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI221_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI222_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI222_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI222_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI222_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI222_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI222_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI222_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI222_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI222_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OR2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OR2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OR2_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OR3_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OR3_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OR3_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OR4_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OR4_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OR4_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFRS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFRS_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFRS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFRS_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFRS_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFRS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFRS_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFRS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFRS_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFRS_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFR_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFR_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFR_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFR_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFR_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFR_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFR_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFR_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFR_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFR_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFS_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFS_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFS_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFS_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFS_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFS_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFF_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFF_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFF_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFF_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFF_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFF_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TBUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TBUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block TBUF_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TBUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TBUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block TBUF_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TBUF_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TBUF_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block TBUF_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TBUF_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TBUF_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block TBUF_X8 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TBUF_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X16/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TBUF_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X16/timing (NDM-032)
+Information: Fixed direction mismatches for block TBUF_X16 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TINV_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TINV_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TINV_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TINV_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block TINV_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TLAT_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TLAT_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TLAT_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TLAT_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block TLAT_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/XNOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XNOR2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/XNOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XNOR2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block XNOR2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/XNOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XNOR2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/XNOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XNOR2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block XNOR2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/XOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XOR2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/XOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XOR2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block XOR2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/XOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XOR2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/XOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XOR2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block XOR2_X2 (LM-054)
+Warning: Mismatched PG pins between the logic library and LEF for block NangateOpenCellLibrary/PADINC:  - Extra DB/power  :  VDD - Extra DB/ground :  VSS. (LM-033)
+Error: Direction 'out' for port YPAD on NangateOpenCellLibrary/PADINC/design
+        does not match expected value 'in' from NangateOpenCellLibrary/PADINC/timing (NDM-032)
+... correction: set port direction from 'out' to 'in' on port NangateOpenCellLibrary/PADINC/design/YPAD
+Information: Fixed direction mismatches for block PADINC (LM-054)
+Warning: Mismatched PG pins between the logic library and LEF for block NangateOpenCellLibrary/PADINOUT:  - Extra DB/power  :  VDD - Extra DB/ground :  VSS. (LM-033)
+Error: Direction 'out' for port YPAD on NangateOpenCellLibrary/PADINOUT/design
+        does not match expected value 'inout' from NangateOpenCellLibrary/PADINOUT/timing (NDM-032)
+... correction: set port direction from 'out' to 'inout' on port NangateOpenCellLibrary/PADINOUT/design/YPAD
+Information: Fixed direction mismatches for block PADINOUT (LM-054)
+Warning: Mismatched PG pins between the logic library and LEF for block NangateOpenCellLibrary/PADOUT:  - Extra DB/power  :  VDD - Extra DB/ground :  VSS. (LM-033)
+Warning: Copied PG pin 'NangateOpenCellLibrary/PADVDD/vdd' from physical source (was missing in logical source) (LM-109)
+Error: Port YPAD missing on NangateOpenCellLibrary/PADVDD/timing (NDM-031)
+Error: Direction 'inout' for port vdd on NangateOpenCellLibrary/PADVDD/design
+        does not match expected value 'in' from NangateOpenCellLibrary/PADVDD/timing (NDM-032)
+Warning:  Port YPAD on library cell PADVDD has been created as a placeholder for a missing logical port.  (LM-113)
+Information: Fixed direction mismatches for block PADVDD (LM-054)
+Warning: Copied PG pin 'NangateOpenCellLibrary/PADGND/gnd' from physical source (was missing in logical source) (LM-109)
+Error: Port YPAD missing on NangateOpenCellLibrary/PADGND/timing (NDM-031)
+Error: Direction 'inout' for port gnd on NangateOpenCellLibrary/PADGND/design
+        does not match expected value 'in' from NangateOpenCellLibrary/PADGND/timing (NDM-032)
+Warning:  Port YPAD on library cell PADGND has been created as a placeholder for a missing logical port.  (LM-113)
+Information: Fixed direction mismatches for block PADGND (LM-054)
+Associated ground rail 2 to pin gnd
+
+NOTE: check_workspace will restart due to port additions ...
+
+Using NangateOpenCellLibrary as the base library.
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AND2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AND2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND2_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AND2_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AND3_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AND3_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND3_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AND3_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AND4_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AND4_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AND4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AND4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AND4_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AND4_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/ANTENNA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/ANTENNA_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/ANTENNA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/ANTENNA_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block ANTENNA_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI21_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI21_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI21_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI21_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI21_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI21_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI21_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI21_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI21_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI21_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI22_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI22_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI22_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI22_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI22_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI22_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI22_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI22_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI22_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI22_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI211_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI211_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI211_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI211_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI211_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI211_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI211_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI211_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI211_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI211_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI221_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI221_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI221_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI221_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI221_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI221_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI221_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI221_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI221_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI221_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI222_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI222_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI222_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI222_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI222_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI222_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/AOI222_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/AOI222_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/AOI222_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block AOI222_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X8 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X16/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X16/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X16 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/BUF_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X32/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/BUF_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/BUF_X32/timing (NDM-032)
+Information: Fixed direction mismatches for block BUF_X32 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKBUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKBUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKBUF_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKBUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKBUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKBUF_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKBUF_X3/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X3/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKBUF_X3/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKBUF_X3/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKBUF_X3 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATETST_X1. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATETST_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATETST_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATETST_X1 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATETST_X2. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATETST_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATETST_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATETST_X2 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATETST_X4. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATETST_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATETST_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATETST_X4 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATETST_X8. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATETST_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATETST_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATETST_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATETST_X8 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATE_X1. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATE_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATE_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATE_X1 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATE_X2. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATE_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATE_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATE_X2 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATE_X4. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATE_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATE_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATE_X4 (LM-054)
+Information: Deriving related power/ground pin for cell CLKGATE_X8. (LM-175)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/CLKGATE_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/CLKGATE_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/CLKGATE_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block CLKGATE_X8 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFRS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFRS_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFRS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFRS_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFRS_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFRS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFRS_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFRS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFRS_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFRS_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFR_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFR_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFR_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFR_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFR_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFR_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFR_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFR_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFR_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFR_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFS_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFS_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFS_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFFS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFS_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFFS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFFS_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DFFS_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFF_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFF_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DFF_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DFF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFF_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DFF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DFF_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DFF_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DLH_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLH_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DLH_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLH_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DLH_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DLH_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLH_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DLH_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLH_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DLH_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DLL_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLL_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DLL_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLL_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block DLL_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/DLL_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLL_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/DLL_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/DLL_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block DLL_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FA_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FA_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block FA_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X8 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X16/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X16/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X16 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/FILLCELL_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X32/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/FILLCELL_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/FILLCELL_X32/timing (NDM-032)
+Information: Fixed direction mismatches for block FILLCELL_X32 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/HA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/HA_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/HA_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/HA_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block HA_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X8 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X16/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X16/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X16 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/INV_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X32/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/INV_X32/design
+        does not match expected value 'in' from NangateOpenCellLibrary/INV_X32/timing (NDM-032)
+Information: Fixed direction mismatches for block INV_X32 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/LOGIC0_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/LOGIC0_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/LOGIC0_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/LOGIC0_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block LOGIC0_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/LOGIC1_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/LOGIC1_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/LOGIC1_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/LOGIC1_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block LOGIC1_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/MUX2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/MUX2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/MUX2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/MUX2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block MUX2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/MUX2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/MUX2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/MUX2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/MUX2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block MUX2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND2_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND2_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND3_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND3_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND3_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND3_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND4_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND4_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NAND4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NAND4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NAND4_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NAND4_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR2_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR2_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR3_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR3_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR3_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR3_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR4_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR4_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/NOR4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/NOR4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/NOR4_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block NOR4_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI21_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI21_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI21_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI21_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI21_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI21_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI21_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI21_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI21_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI21_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI22_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI22_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI22_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI22_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI22_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI22_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI22_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI22_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI22_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI22_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI33_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI33_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI33_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI33_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI33_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI211_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI211_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI211_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI211_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI211_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI211_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI211_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI211_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI211_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI211_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI221_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI221_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI221_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI221_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI221_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI221_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI221_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI221_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI221_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI221_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI222_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI222_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI222_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI222_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI222_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI222_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OAI222_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OAI222_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OAI222_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OAI222_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OR2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OR2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR2_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR2_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OR2_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR3_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OR3_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR3_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OR3_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR3_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR3_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OR3_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR4_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block OR4_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR4_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block OR4_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/OR4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/OR4_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/OR4_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block OR4_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFRS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFRS_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFRS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFRS_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFRS_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFRS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFRS_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFRS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFRS_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFRS_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFR_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFR_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFR_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFR_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFR_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFR_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFR_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFR_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFR_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFR_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFS_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFS_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFS_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFS_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFFS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFS_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFFS_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFFS_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFFS_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFF_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFF_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFF_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/SDFF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFF_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/SDFF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/SDFF_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block SDFF_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TBUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TBUF_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block TBUF_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TBUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TBUF_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block TBUF_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TBUF_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X4/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TBUF_X4/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X4/timing (NDM-032)
+Information: Fixed direction mismatches for block TBUF_X4 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TBUF_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X8/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TBUF_X8/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X8/timing (NDM-032)
+Information: Fixed direction mismatches for block TBUF_X8 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TBUF_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X16/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TBUF_X16/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TBUF_X16/timing (NDM-032)
+Information: Fixed direction mismatches for block TBUF_X16 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TINV_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TINV_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TINV_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TINV_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block TINV_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/TLAT_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TLAT_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/TLAT_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/TLAT_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block TLAT_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/XNOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XNOR2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/XNOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XNOR2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block XNOR2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/XNOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XNOR2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/XNOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XNOR2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block XNOR2_X2 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/XOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XOR2_X1/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/XOR2_X1/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XOR2_X1/timing (NDM-032)
+Information: Fixed direction mismatches for block XOR2_X1 (LM-054)
+Error: Direction 'inout' for port VDD on NangateOpenCellLibrary/XOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XOR2_X2/timing (NDM-032)
+Error: Direction 'inout' for port VSS on NangateOpenCellLibrary/XOR2_X2/design
+        does not match expected value 'in' from NangateOpenCellLibrary/XOR2_X2/timing (NDM-032)
+Information: Fixed direction mismatches for block XOR2_X2 (LM-054)
+Warning: Mismatched PG pins between the logic library and LEF for block NangateOpenCellLibrary/PADINC:  - Extra DB/power  :  VDD - Extra DB/ground :  VSS. (LM-033)
+Error: Direction 'out' for port YPAD on NangateOpenCellLibrary/PADINC/design
+        does not match expected value 'in' from NangateOpenCellLibrary/PADINC/timing (NDM-032)
+... correction: set port direction from 'out' to 'in' on port NangateOpenCellLibrary/PADINC/design/YPAD
+Information: Fixed direction mismatches for block PADINC (LM-054)
+Warning: Mismatched PG pins between the logic library and LEF for block NangateOpenCellLibrary/PADINOUT:  - Extra DB/power  :  VDD - Extra DB/ground :  VSS. (LM-033)
+Error: Direction 'out' for port YPAD on NangateOpenCellLibrary/PADINOUT/design
+        does not match expected value 'inout' from NangateOpenCellLibrary/PADINOUT/timing (NDM-032)
+... correction: set port direction from 'out' to 'inout' on port NangateOpenCellLibrary/PADINOUT/design/YPAD
+Information: Fixed direction mismatches for block PADINOUT (LM-054)
+Warning: Mismatched PG pins between the logic library and LEF for block NangateOpenCellLibrary/PADOUT:  - Extra DB/power  :  VDD - Extra DB/ground :  VSS. (LM-033)
+Warning: Copied PG pin 'NangateOpenCellLibrary/PADVDD/vdd' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell PADVDD. (LM-175)
+Error: Direction 'inout' for port vdd on NangateOpenCellLibrary/PADVDD/design
+        does not match expected value 'in' from NangateOpenCellLibrary/PADVDD/timing (NDM-032)
+Information: Fixed direction mismatches for block PADVDD (LM-054)
+Warning: Copied PG pin 'NangateOpenCellLibrary/PADGND/gnd' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell PADGND. (LM-175)
+Error: Direction 'inout' for port gnd on NangateOpenCellLibrary/PADGND/design
+        does not match expected value 'in' from NangateOpenCellLibrary/PADGND/timing (NDM-032)
+Information: Fixed direction mismatches for block PADGND (LM-054)
+Associated ground rail 2 to pin gnd
+Information: Combined 141 physical designs:141 with a design view (46 had ports reordered); (LM-034)
+... creating frames for NangateOpenCellLibrary
+Warning: Block AND2_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND2_X2.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND3_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND3_X2.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND3_X4.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND4_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND4_X2.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AND4_X4.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block AOI222_X4.frame has a very large regular routing blockage RB_3 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block BUF_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block BUF_X16.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block BUF_X32.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block CLKBUF_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block CLKGATE_X2.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block CLKGATE_X4.frame has a very large regular routing blockage RB_1 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DFFS_X1.frame has a very large regular routing blockage RB_3 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DFFS_X2.frame has a very large regular routing blockage RB_4 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block DFF_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block FA_X1.frame has a very large regular routing blockage RB_3 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block MUX2_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block MUX2_X2.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block MUX2_X2.frame has a very large regular routing blockage RB_2 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OAI221_X4.frame has a very large regular routing blockage RB_1 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OAI222_X4.frame has a very large regular routing blockage RB_1 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR2_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR2_X2.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR3_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR3_X2.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR3_X4.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR4_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR4_X2.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block OR4_X4.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block SDFFS_X2.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TBUF_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TBUF_X1.frame has a very large regular routing blockage RB_2 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TBUF_X4.frame has a very large regular routing blockage RB_1 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TBUF_X8.frame has a very large regular routing blockage RB_2 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TBUF_X16.frame has a very large regular routing blockage RB_1 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TBUF_X16.frame has a very large regular routing blockage RB_2 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block TINV_X1.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Information: Block PADINC.frame, the feature of blockage trimming by pin is set to 'touch' on specific layers. All metal shapes and routing blockages touch pins in design view are trimmed on layers: metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10. (FRAM-046)
+Warning: Block PADINC.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADINC.frame has a very large regular routing blockage RB_16 on the metal3 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADINC.frame has a very large regular routing blockage RB_24 on the metal4 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Information: Block PADINOUT.frame, the feature of blockage trimming by pin is set to 'touch' on specific layers. All metal shapes and routing blockages touch pins in design view are trimmed on layers: metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10. (FRAM-046)
+Warning: Block PADINOUT.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADINOUT.frame has a very large regular routing blockage RB_19 on the metal3 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADINOUT.frame has a very large regular routing blockage RB_28 on the metal4 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Information: Block PADOUT.frame, the feature of blockage trimming by pin is set to 'touch' on specific layers. All metal shapes and routing blockages touch pins in design view are trimmed on layers: metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10. (FRAM-046)
+Warning: Block PADOUT.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADOUT.frame has a very large regular routing blockage RB_21 on the metal3 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADOUT.frame has a very large regular routing blockage RB_29 on the metal4 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Information: Block PADFC.frame, the feature of blockage trimming by pin is set to 'touch' on specific layers. All metal shapes and routing blockages touch pins in design view are trimmed on layers: metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10. (FRAM-046)
+Warning: Block PADFC.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADFC.frame has a very large regular routing blockage RB_13 on the metal3 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADFC.frame has a very large regular routing blockage RB_14 on the metal4 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Information: Block PADNC.frame, the feature of blockage trimming by pin is set to 'touch' on specific layers. All metal shapes and routing blockages touch pins in design view are trimmed on layers: metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10. (FRAM-046)
+Warning: Block PADNC.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADNC.frame has a very large regular routing blockage RB_9 on the metal3 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADNC.frame has a very large regular routing blockage RB_10 on the metal4 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Information: Block PADVDD.frame, the feature of blockage trimming by pin is set to 'touch' on specific layers. All metal shapes and routing blockages touch pins in design view are trimmed on layers: metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10. (FRAM-046)
+Warning: Block PADVDD.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADVDD.frame has a very large regular routing blockage RB_13 on the metal3 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADVDD.frame has a very large regular routing blockage RB_19 on the metal4 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Information: Block PADGND.frame, the feature of blockage trimming by pin is set to 'touch' on specific layers. All metal shapes and routing blockages touch pins in design view are trimmed on layers: metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10. (FRAM-046)
+Warning: Block PADGND.frame has a very large regular routing blockage RB_0 on the metal1 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADGND.frame has a very large regular routing blockage RB_11 on the metal3 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+Warning: Block PADGND.frame has a very large regular routing blockage RB_17 on the metal4 metal layer; this might prevent the router from connecting to nearby terminals. (FRAM-066)
+... created 141 frames
+
+Workspace check succeeded!
+... wrote CLIBs/NangateOpenCellLibrary.ndm
+... removing library 'NangateOpenCellLibrary'
+... removing library 'nangate_stdcell'
+... lib workspace removed!
+Maximum memory usage for this session: 197.89 MB
+CPU usage for this session:      2 seconds (  0.00 hours)
+Elapsed time for this session:      6 seconds (  0.00 hours)
+Thank you for using Library Manager.
+
