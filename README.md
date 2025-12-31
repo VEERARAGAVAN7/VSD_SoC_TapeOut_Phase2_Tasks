@@ -8,7 +8,7 @@
 
 This comprehensive project documents a **complete VLSI design verification and backend implementation methodology** for a RISC-V System-on-Chip (SoC) using industrial-grade Synopsys EDA tools. The work spans **multi-level verification** (RTL-level and gate-level simulation), **functional sign-off**, **complete physical design closure**, and critical **interface verification** (SPI Flash, mprj_io port management), all targeting the **SCL180 180nm commercial process technology**.
 
-![img](Screenshots/synop.png)
+![img](Screenshots/synop.jpg)
 
 ---
 
@@ -82,7 +82,7 @@ A critical architectural decision was the **intentional removal of the Power-On-
 ```
 ### Few RTL to GLS Simulation log and waveform results
 
-![img](Screenshots/hkspi_rtl_pass.png.png)
+![img](Screenshots/hkspi_rtl_pass.png)
 
 ![img](Screenshots/hkspi_syn.png)
 
