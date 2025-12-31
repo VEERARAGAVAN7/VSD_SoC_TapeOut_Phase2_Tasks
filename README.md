@@ -84,9 +84,13 @@ A critical architectural decision was the **intentional removal of the Power-On-
 
 ![img](Screenshots/hkspi_rtl_pass.png)
 
+![img](Screenshots/RTL.png)
+
 ![img](Screenshots/hkspi_syn.png)
 
 ![img](Screenshots/hkspi_gls_pass.png)
+
+![img](Screenshots/GLS.png)
 
 ### 2.2 Synopsys EDA Toolchain
 
@@ -1901,7 +1905,8 @@ This comprehensive project successfully demonstrates **full-stack VLSI design me
 ---
 
 **Last Updated:** December 31, 2025  
-**Status:** Production-Ready ✅  
-**Version:** 1.0 Final
+**Author:** Veeraragavan 
+**Status:** completely Verified    
+
 
 ---
