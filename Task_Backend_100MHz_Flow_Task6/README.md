@@ -177,6 +177,10 @@ save_lib -all
 
 **Output:** Floorplan checkpoint saved.
 
+![img](Screenshots/fp1.png)
+
+![img](Screenshots/fp2.png)
+
 ### 2.3 Early PG Pin Connection
 
 **Purpose:** Initial automatic power and ground pin connection.
@@ -195,6 +199,8 @@ save_lib -all
 ### 2.4 IO Pad Placement
 
 **Purpose:** Place IO pads around the die perimeter and define their constraints.
+
+![img](Screenshots/fp3.png)
 
 #### Pad Constraint Definition
 
@@ -231,12 +237,14 @@ create_io_guide -side bottom \
     -line {{3588 0} 3588}
 ```
 
+![img](Screenshots/fp4.png)
+
 **Explanation:**
-- **52 IO pads total:**
+- **48 IO pads total:**
   - Right side: 13 pads (analog, comparator, external clock, flash)
-  - Left side: 15 pads (flash IO, GPIO 0-14)
+  - Left side: 12 pads (flash IO, GPIO 0-14)
   - Top side: 11 pads (GPIO 15, GPIO 2-9, IRQ, opamp bias enable)
-  - Bottom side: 13 pads (opamp enable, overtemp, PLL, ring oscillator, reset, serial, SPI)
+  - Bottom side: 12 pads (opamp enable, overtemp, PLL, ring oscillator, reset, serial, SPI)
 
 - **`create_io_guide -side`:** Defines which pads belong to which die edge.
 - **`-line`:** Specifies the guide line geometry (start and end coordinates along that edge).
@@ -342,6 +350,7 @@ source macro_constraints.tcl
 report_macro_constraints -allowed_orientations -preferred_location \
   -alignment_grid -align_pins_to_tracks [get_cells sram]
 ```
+![img](Screenshots/fp4.png)
 
 **Expected Output:**
 ```
@@ -351,7 +360,7 @@ Macro: sram
 ├── R0 Alignment Grid: core ✓
 └── Align Pins to Tracks: true ✓
 ```
-
+![img](Screenshots/sram.png)
 ---
 
 ## 4. Placement
@@ -436,6 +445,7 @@ if [sizeof_collection [get_cells -hier -filter is_hard_macro==true -quiet]] {
 save_block -hier -force -label ${PLACEMENT_LABEL_NAME}
 save_lib -all
 ```
+![img](Screenshots/place_log.png)
 
 ---
 
@@ -477,6 +487,7 @@ compile_pg -strategies connect_stripes
 compile_pg -strategies extend_to_die
 sroute -connect {...} -nets {VDD VSS}
 ```
+![img](Screenshots/pg.png)
 
 ### 5.2 Problems Encountered
 
@@ -523,6 +534,7 @@ VDD Connectivity:
 
 VSS Connectivity: Similar
 ```
+![img](Screenshots/flot1.png)
 
 **Why:**
 - Invalid strategies were skipped.
@@ -577,16 +589,17 @@ check_pg_connectivity -report_floating_only
 
 ```
 VDD Connectivity:
-  Number of floating wires: 0 ✓
+  Number of floating wires: 4 ✓
   Number of floating vias: 0 ✓
-  Number of floating I/O pads: 0 ✓
+  Number of floating I/O pads: 15 ✓
   Number of floating hard macros: 0 ✓
   Number of floating std cells: 0 ✓
 
 VSS Connectivity: Same
 ```
+![img](Screenshots/float_opt.png)
 
-**Output:** PG mesh and straps successfully connected to all elements.
+**Output:** PG mesh and straps successfully connected to few more elements.
 
 ---
 
@@ -626,6 +639,8 @@ if {$PLACE_PINS_SELF} {
 - Snaps each top-level pin to the center of its corresponding IO pad.
 - Aligns pins with routing tracks for optimal access.
 
+![img](Screenshots/pinplace.png)
+
 ### 6.3 Pin Placement Verification
 
 ```tcl
@@ -641,8 +656,47 @@ if {$PLACE_PINS_SELF} {
    report_pin_placement -self > $REPORTS_DIR_PLACE_PINS/report_port_placement.rpt
 }
 ```
-
+<details> <summary><strong></strong>report_port_placement</summary>
+****************************************
+Report : report_pin_placement
+Design : raven_wrapper
+Version: U-2022.12-SP3
+Date   : Wed Dec 24 15:58:17 2025
+****************************************
+block raven_wrapper pin gpio[15] layer metal2 side 4 offset 1794.22
+block raven_wrapper pin gpio[14] layer metal2 side 4 offset 769.36
+block raven_wrapper pin gpio[13] layer metal2 side 4 offset 1281.6
+block raven_wrapper pin gpio[12] layer metal2 side 4 offset 1793.84
+block raven_wrapper pin gpio[11] layer metal2 side 4 offset 2306.08
+block raven_wrapper pin gpio[10] layer metal2 side 4 offset 2818.32
+block raven_wrapper pin gpio[9] layer metal2 side 4 offset 3330.56
+block raven_wrapper pin gpio[8] layer metal3 side 3 offset 289.7
+block raven_wrapper pin gpio[7] layer metal3 side 3 offset 865.94
+block raven_wrapper pin gpio[6] layer metal3 side 3 offset 1442.18
+block raven_wrapper pin gpio[5] layer metal3 side 3 offset 2018.56
+block raven_wrapper pin gpio[4] layer metal3 side 3 offset 2594.8
+block raven_wrapper pin gpio[3] layer metal3 side 3 offset 3171.04
+block raven_wrapper pin gpio[2] layer metal3 side 3 offset 3747.28
+block raven_wrapper pin gpio[1] layer metal3 side 3 offset 4323.66
+block raven_wrapper pin gpio[0] layer metal3 side 3 offset 4899.9
+block raven_wrapper pin analog_out_sel layer metal2 side 2 offset 3288.32
+block raven_wrapper pin opamp_ena layer metal2 side 2 offset 2690.58
+block raven_wrapper pin opamp_bias_ena layer metal2 side 2 offset 2093.03
+block raven_wrapper pin bg_ena layer metal2 side 2 offset 1495.29
+block raven_wrapper pin comp_ena layer metal2 side 2 offset 897.74
+block raven_wrapper pin comp_ninputsrc[1] layer metal2 side 2 offset 300
+block raven_wrapper pin comp_ninputsrc[0] layer metal3 side 1 offset 4898.3
+block raven_wrapper pin comp_pinputsrc[1] layer metal3 side 1 offset 4322.06
+block raven_wrapper pin comp_pinputsrc[0] layer metal3 side 1 offset 3745.82
+block raven_wrapper pin rcosc_ena layer metal3 side 1 offset 3169.44
+block raven_wrapper pin overtemp_ena layer metal3 side 1 offset 2593.2
+block raven_wrapper pin ser_tx layer metal3 side 1 offset 2016.96
+block raven_wrapper pin trap layer metal3 side 1 offset 1440.72
+block raven_wrapper pin flash_csb layer metal3 side 1 offset 864.34
+block raven_wrapper pin flash_clk layer metal3 side 1 offset 288.1
+</details>
 **Output:** Pin locations saved for incremental runs.
+
 
 ---
 
@@ -675,10 +729,122 @@ redirect -file $REPORTS_DIR_TIMING_ESTIMATION/${DESIGN_NAME}.post_estimated_timi
 **`report_timing -corner estimated_corner`:**
 - Shows longest paths (worst setup slack).
 - Identifies critical path bottlenecks.
+<details> <summary><strong></strong>report_port_placement</summary>
+[icc2-lic Wed Dec 24 16:07:40 2025] Command 'report_timing' requires licenses
+[icc2-lic Wed Dec 24 16:07:40 2025] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Wed Dec 24 16:07:40 2025] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Wed Dec 24 16:07:40 2025] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Wed Dec 24 16:07:40 2025] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by design
+Design : raven_wrapper
+Version: U-2022.12-SP3
+Date   : Wed Dec 24 16:07:40 2025
+****************************************
+
+  Startpoint: ext_clk_sel (input port clocked by ext_clk)
+  Endpoint: _20069_ (rising clock gating-check end-point clocked by ext_clk')
+  Mode: func1
+  Corner: estimated_corner
+  Scenario: func1::estimated_corner
+  Path Group: **in2reg_default**
+  Path Type: max
+
+  Point                                            Incr      Path       Delta Incr     Analysis
+  ----------------------------------------------------------------------------------------------------
+  clock ext_clk (rise edge)                        0.00      0.00
+  clock network delay (ideal)                      0.00      0.00
+  input external delay                             0.60      0.60 r
+  ext_clk_sel (in)                                 0.00      0.60 r      0.00
+  ext_clk_sel_buf/DI (PADINC)                      8.11 e    8.71 r ~  -148.38
+  _20069_/B2 (OAI21_X1)                            0.57 e    9.28 r     -3.00        Buff: 7 buffers added
+  data arrival time                                          9.28      -151.38       Delta arrival
+
+  clock ext_clk' (rise edge)                       2.00      2.00
+  clock network delay (ideal)                      0.00      2.00
+  _20069_/A (OAI21_X1)                             0.00      2.00 r      0.00        Buff: Short net
+  library setup time                              -0.00      2.00
+  data required time                                         2.00
+  ----------------------------------------------------------------------------------------------------
+  data required time                                         2.00
+  data arrival time                                         -9.28
+  ----------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                          -7.28
+
+
+1
+</details>
 
 **`report_qor`:**
 - Quality of results summary.
 - Total negative slack (TNS), worst negative slack (WNS).
+
+<details> <summary><strong></strong>report_port_placement</summary>
+[icc2-lic Wed Dec 24 16:07:40 2025] Command 'report_qor' requires licenses
+[icc2-lic Wed Dec 24 16:07:40 2025] Attempting to check-out alternate set of keys directly with queueing
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending check-out request for 'ICCompilerII-8' (1) with wait option
+[icc2-lic Wed Dec 24 16:07:40 2025] Check-out request for 'ICCompilerII-8' with wait option succeeded
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending checkout check request for 'ICCompilerII-8' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Checkout check request for 'ICCompilerII-8' returned 0 
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending count request for 'ICCompilerII-8' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Count request for 'ICCompilerII-8' returned 1 
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending check-out request for 'ICCompilerII-NX' (1) with wait option
+[icc2-lic Wed Dec 24 16:07:40 2025] Check-out request for 'ICCompilerII-NX' with wait option succeeded
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending checkout check request for 'ICCompilerII-NX' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Checkout check request for 'ICCompilerII-NX' returned 0 
+[icc2-lic Wed Dec 24 16:07:40 2025] Sending count request for 'ICCompilerII-NX' 
+[icc2-lic Wed Dec 24 16:07:40 2025] Count request for 'ICCompilerII-NX' returned 1 
+[icc2-lic Wed Dec 24 16:07:40 2025] Check-out of alternate set of keys directly with queueing was successful
+****************************************
+Report : qor
+        -summary
+Design : raven_wrapper
+Version: U-2022.12-SP3
+Date   : Wed Dec 24 16:07:41 2025
+****************************************
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+func1::estimated_corner
+                   (Setup)            -7.28      -12633.42           2454
+func1              (Setup)      -1968937.50    -5749173.24           2498
+Design             (Setup)      -1968937.50    -5749173.24           2498
+
+func1              (Hold)            -35.88       -5995.90            558
+Design             (Hold)            -35.88       -5995.90            558
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                        1293326.12
+Cell Area (netlist and physical only):      1293326.12
+Nets with DRC Violations:     3640
+1
+</details>
 
 ### 7.3 Hold Analysis
 
@@ -746,6 +912,8 @@ clock_opt
 - Minimizes clock skew.
 - Balances clock delay to all endpoints.
 
+![img](Screenshots/cts_check.png)
+
 ### 8.3 Routing
 
 **Purpose:** Route all nets and optimize for timing/congestion.
@@ -759,6 +927,9 @@ route_auto -max_detail_route_iterations 3
 - Track assignment
 - DRC fixing loop
 - Timing optimization
+
+![img](Screenshots/route.png)
+![img](Screenshots/route_check.png)
 
 ### 8.4 Filler Insertion
 
@@ -810,9 +981,8 @@ Mixed ICC1/ICC2 syntax in workshop collaterals; ICC2 variant installed has restr
 
 **Encountered:**
 ```
-Number of floating wires: 1725
+Number of floating wires: 4
 Number of floating hard macros: 1
-Number of floating I/O pads: 1
 ```
 
 **Root Cause:**
@@ -1059,12 +1229,5 @@ This comprehensive backend flow guide documents the **complete Raven SoC physica
 ✅ Pin placement and verification  
 ✅ Timing estimation (setup + hold analysis)  
 ✅ Final place, CTS, routing, and filler insertion  
-
-**Key Takeaways:**
-- Always verify command availability in your ICC2 variant before scripting.
-- Use normalized coordinates [0,1] for macro placement constraints.
-- Implement manual PG connections when advanced strategies are unavailable.
-- Follow strict PD flow order (floorplan → IO → placement → PG → pins → timing → route).
-- Save checkpoints at each major stage for incremental debugging.
 
 **For Future Users:** This README should accelerate backend implementation on similar VLSI projects using ICC2, whether Caravel-based or custom SoC designs.
