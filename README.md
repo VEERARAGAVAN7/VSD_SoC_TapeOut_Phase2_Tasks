@@ -1905,8 +1905,8 @@ This comprehensive project successfully demonstrates **full-stack VLSI design me
 ---
 
 **Last Updated:** December 31, 2025  
-**Author:** Veeraragavan 
-**Status:** completely Verified    
+**Author:** Veeraragavan  
+**Status:** completely Verified  
 
 
 ---
